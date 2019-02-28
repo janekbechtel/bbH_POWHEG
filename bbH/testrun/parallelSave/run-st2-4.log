@@ -1,0 +1,167 @@
+LHAPDF 6.1.6 loading /cvmfs/cms.cern.ch/slc6_amd64_gcc530/external/lhapdf/6.1.6-ikhhed/share/LHAPDF/MSTW2008nlo68cl_nf4/MSTW2008nlo68cl_nf4_0000.dat
+MSTW2008nlo68cl_nf4 PDF set, member #0, version 2; LHAPDF ID = 23300
+  found input file powheg.input
+  opened powheg.input
+  powheginput keyword compress_lhe         absent; set to   -1000000.0000000000     
+  powheginput keyword compress_upb         absent; set to   -1000000.0000000000     
+  powheginput keyword testplots            set to    1.0000000000000000     
+  powheginput keyword numevts              set to    1000.0000000000000     
+  powheginput keyword storemintupb         absent; set to   -1000000.0000000000     
+  powheginput keyword fastbtlbound         absent; set to   -1000000.0000000000     
+  powheginput keyword mintupbratlim        absent; set to   -1000000.0000000000     
+  powheginput keyword maxseeds             absent; set to   -1000000.0000000000     
+  powheginput keyword manyseeds            set to    1.0000000000000000     
+ enter which seed
+  powheginput keyword rwl_add              absent; set to   -1000000.0000000000     
+  powheginput keyword rwl_format_rwgt      absent; set to   -1000000.0000000000     
+  powheginput keyword flg_debug            absent; set to   -1000000.0000000000     
+  powheginput keyword withnegweights       absent; set to   -1000000.0000000000     
+  powheginput keyword bornsuppfact         absent; set to   -1000000.0000000000     
+  powheginput keyword ptsupp               absent; set to   -1000000.0000000000     
+  powheginput keyword doublefsr            absent; set to   -1000000.0000000000     
+  powheginput keyword smartsig             absent; set to   -1000000.0000000000     
+  powheginput keyword withsubtr            absent; set to   -1000000.0000000000     
+  powheginput keyword hfact                absent; set to   -1000000.0000000000     
+  powheginput keyword withdamp             absent; set to   -1000000.0000000000     
+  powheginput keyword bornzerodamp         absent; set to   -1000000.0000000000     
+  powheginput keyword hdamp                absent; set to   -1000000.0000000000     
+  powheginput keyword bornonly             absent; set to   -1000000.0000000000     
+  powheginput keyword LOevents             absent; set to   -1000000.0000000000     
+  powheginput keyword novirtual            absent; set to   -1000000.0000000000     
+  powheginput keyword iseed                set to    2.0000000000000000     
+  powheginput keyword rand1                absent; set to   -1000000.0000000000     
+  powheginput keyword rand2                absent; set to   -1000000.0000000000     
+  powheginput keyword iupperisr            absent; set to   -1000000.0000000000     
+  powheginput keyword iupperfsr            absent; set to   -1000000.0000000000     
+  powheginput keyword pdfreweight          absent; set to   -1000000.0000000000     
+  powheginput keyword storeinfo_rwgt       absent; set to   -1000000.0000000000     
+  powheginput keyword compute_rwgt         absent; set to   -1000000.0000000000     
+  powheginput keyword minlo                absent; set to   -1000000.0000000000     
+  powheginput keyword nnlops               absent; set to   -1000000.0000000000     
+  powheginput keyword ubexcess_correct     absent; set to   -1000000.0000000000     
+ RM48 INITIALIZED:         2           0         0
+  powheginput keyword par_diexp            absent; set to   -1000000.0000000000     
+  powheginput keyword par_dijexp           absent; set to   -1000000.0000000000     
+  powheginput keyword par_2gsupp           absent; set to   -1000000.0000000000     
+  powheginput keyword ih1                  set to    1.0000000000000000     
+  powheginput keyword ih2                  set to    1.0000000000000000     
+  powheginput keyword lhans1               set to    23300.000000000000     
+  powheginput keyword lhans2               set to    23300.000000000000     
+  powheginput keyword lhapdf6maxsets       absent; set to   -1000000.0000000000     
+  check: alpha_s(Mz)=  0.11490440000000000     
+  alpha_s order (0,1,2):            1
+  Lambda 5 is   0.18923705625990395     
+  powheginput keyword ebeam1               set to    6500.0000000000000     
+  powheginput keyword ebeam2               set to    6500.0000000000000     
+  powheginput keyword bornktmin            absent; set to   -1000000.0000000000     
+  powheginput keyword ptsqmin              absent; set to   -1000000.0000000000     
+  powheginput keyword charmthr             absent; set to   -1000000.0000000000     
+  powheginput keyword bottomthr            absent; set to   -1000000.0000000000     
+  powheginput keyword renscfact            set to    1.0000000000000000     
+  powheginput keyword facscfact            set to    1.0000000000000000     
+  powheginput keyword evenmaxrat           absent; set to   -1000000.0000000000     
+  powheginput keyword alphas_from_lhapdf   absent; set to   -1000000.0000000000     
+  powheginput keyword hdecaymode           set to   -1.0000000000000000     
+ number of quark flavors for alpha_s =           5
+  powheginput keyword toploop              set to    1.0000000000000000     
+ top loop effects included
+  powheginput keyword msbar                set to    1.0000000000000000     
+ MSbar renormalization used for b-quark
+  powheginput keyword hmass                set to    125.00000000000000     
+  powheginput keyword hwidth               set to    4.9800000000000001E-003
+  **** Minimum maxalr allowed:           41  *********
+  **** Number of born graphs:             9
+  **** Number of real graphs:            25
+  **** Number of regular regions:           0
+  powheginput keyword softtest             absent; set to   -1000000.0000000000     
+  powheginput keyword colltest             absent; set to   -1000000.0000000000     
+  powheginput keyword delta_mbbmin         set to    0.0000000000000000     
+  powheginput keyword runningscales        absent; set to   -1000000.0000000000     
+ *************************************
+ Factorization and renormalization 
+ scales (mur, muf) set to 
+ (mH + 2*mb)/2=   67.250000000000000     
+ Renormalization scale rescaled by   1.0000000000000000     
+ Factorization scale rescaled by     1.0000000000000000     
+ ***********************************************
+ mb(MSbar): two-loop running
+ RM48 INITIALIZED:         2           7         0
+ RM48IN SKIPPING OVER               7
+ RM48 INITIALIZED:         2          10         0
+ RM48IN SKIPPING OVER              10
+ Writing realequiv file...
+ Done
+ RM48 INITIALIZED:         2          10         0
+ RM48IN SKIPPING OVER              10
+ Writing realequivregions file...
+ Done
+  powheginput keyword olddij               absent; set to   -1000000.0000000000     
+  powheginput keyword charmthrpdf          absent; set to   -1000000.0000000000     
+  powheginput keyword bottomthrpdf         absent; set to   -1000000.0000000000     
+ RM48 INITIALIZED:         2           0         0
+ Writing bornequiv file...
+ Done
+  POWHEG:  
+  Check of soft/collinear limits performed
+  Results in file pwhg_checklimits
+  powheginput keyword parallelstage        set to    2.0000000000000000     
+  powheginput keyword use-old-grid         set to    1.0000000000000000     
+  loading xg2    iteration file
+  powheginput keyword check_bad_st1        absent; set to   -1000000.0000000000     
+  Opened pwggridinfo-btl-xg2-0001.dat                                                                        
+  Opened pwggridinfo-btl-xg2-0002.dat                                                                        
+  Opened pwggridinfo-btl-xg2-0003.dat                                                                        
+  Opened pwggridinfo-btl-xg2-0004.dat                                                                        
+  Opened pwggridinfo-btl-xg2-0005.dat                                                                        
+  Opened pwggridinfo-btl-xg2-0006.dat                                                                        
+  Opened pwggridinfo-btl-xg2-0007.dat                                                                        
+  Opened pwggridinfo-btl-xg2-0008.dat                                                                        
+  Opened pwggridinfo-btl-xg2-0009.dat                                                                        
+  Opened pwggridinfo-btl-xg2-0010.dat                                                                        
+  Opened pwggridinfo-btl-xg2-0011.dat                                                                        
+Thanks for using LHAPDF 6.1.6. Please make sure to cite the paper:
+  Eur.Phys.J. C75 (2015) 3, 132  (http://arxiv.org/abs/1412.7420)
+  Opened pwggridinfo-btl-xg2-0012.dat                                                                        
+  powheginput keyword foldcsi              set to    1.0000000000000000     
+  powheginput keyword foldy                set to    1.0000000000000000     
+  powheginput keyword foldphi              set to    1.0000000000000000     
+ RM48 INITIALIZED:         4           0         0
+  POWHEG: Computing pos.+|neg.|  weight contribution to inclusive cross section
+  powheginput keyword ncall2               set to    50000.000000000000     
+  powheginput keyword itmx2                set to    1.0000000000000000     
+  powheginput keyword ncall2rm             absent; set to   -1000000.0000000000     
+  powheginput keyword itmx2rm              absent; set to   -1000000.0000000000     
+  powheginput keyword stage2init           absent; set to   -1000000.0000000000     
+  powheginput keyword fixedgrid            absent; set to   -1000000.0000000000     
+  powheginput keyword btildeborn           absent; set to   -1000000.0000000000     
+  powheginput keyword btildevirt           absent; set to   -1000000.0000000000     
+  powheginput keyword btildecoll           absent; set to   -1000000.0000000000     
+  powheginput keyword btildereal           absent; set to   -1000000.0000000000     
+ =============================
+ Using no Born suppression
+ =============================
+  powheginput keyword fakevirt             absent; set to   -1000000.0000000000     
+ RM48 INITIALIZED:         4          19         0
+ RM48IN SKIPPING OVER              19
+ Writing virtequiv file...
+ Done
+  powheginput keyword btlscalereal         absent; set to   -1000000.0000000000     
+  powheginput keyword btlscalect           absent; set to   -1000000.0000000000     
+   1.5067379600523246E-002   9.5828584336210155E-003
+ tot:  -3.9899310573606114E-003 +-   9.3883164012879133E-003
+ abs:   1.5067379600522974E-002 +-   9.5828584336210276E-003
+ pos:   5.5387242715816193E-003 +-   2.1977651436183975E-003
+ neg:   9.5286553289420321E-003 +-   9.2279823731004629E-003
+  powheginput keyword ubsigmadetails       absent; set to   -1000000.0000000000     
+ btilde pos.   weights:   5.5387242715816193E-003  +-   2.1977651436183975E-003
+ btilde |neg.| weights:   9.5286553289420321E-003  +-   9.2279823731004629E-003
+ btilde total (pos.-|neg.|):  -3.9899310573606114E-003  +-   9.3883164012879133E-003
+  total (btilde+remnants) cross section in pb  -3.9899310573606114E-003 +-   9.3883164012879133E-003
+  negative weight fraction:  0.63240295138054392     
+ powheginput WARNING: unused variable use-old-ubound      
+ powheginput WARNING: unused variable ncall1              
+ powheginput WARNING: unused variable itmx1               
+ powheginput WARNING: unused variable nubound             
+ powheginput WARNING: unused variable icsimax             
+ powheginput WARNING: unused variable iymax               
+ powheginput WARNING: unused variable xupbound            

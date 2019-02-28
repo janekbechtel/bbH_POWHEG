@@ -1,0 +1,114 @@
+<LesHouchesEvents version="3.0">
+<!--
+file generated with POWHEG-BOX-V2
+Input file powheg.input contained:
+numevts 100    ! number of events to be generated
+
+! Production parameters for ttH production
+hmass 125.d0      ! mass of the HIggs boson [GeV]
+hwidth 0.00498d0  ! width of the Higgs boson [GeV]
+
+hdecaymode -1    ! -1 no decay
+                ! 0 all decay channels open
+                ! 1-6 d dbar, u ubar,..., t tbar
+                ! 7-9 e+ e-, mu+ mu-, tau+ tau-
+                ! 10  W+W-
+                ! 11  ZZ
+                ! 12  gamma gamma
+
+#pythiatune 320	! PYTHIA tune
+
+
+ih1   1           ! hadron 1 (1 for protons, -1 for antiprotons)
+ih2   1           ! hadron 2 (1 for protons, -1 for antiprotons)
+ebeam1 6500d0     ! energy of beam 1
+ebeam2 6500d0     ! energy of beam 2
+
+! To be set only if using 'native' pdfs
+!ndns1 131         ! pdf set for hadron 1 (mlm numbering)
+!ndns2 131         ! pdf set for hadron 2 (mlm numbering)
+! To be set only if using LHA pdfs
+! 10050 cteq6m
+! 10042 cteq6l with LO alphas (corr. to vbfnlo LO set)
+! 10041 cteq6l with NLO alphas
+! 21000 MSTW2008 LO
+! 21100 MSTW2008 NLO
+! 23300 MSTW2008 NLO, NF=4
+! 11082 CT10 Nf4
+
+lhans1  23300      ! pdf set for hadron 1 (LHA numbering)
+lhans2  23300      ! pdf set for hadron 2 (LHA numbering)
+
+#bornktmin 1d0    ! Generation cut; minimum kt in underlying born
+#bornsuppfact 1d0 ! (default 0d0) switch for Born suppression factor. If < 0 suppfact = 1
+delta_mbbmin 0d0 ! generation cut on mbb (no gencut used, if set to 0)
+
+use-old-grid    1 ! if 1 use old grid if file pwggrids.dat is present (<> 1 regenerate)
+use-old-ubound  1 ! if 1 use norm of upper bounding function stored in pwgubound.dat, if present; <>
+
+ncall1  500000  ! number of calls for initializing the integration grid
+itmx1    2     ! number of iterations for initializing the integration grid
+ncall2  50000  ! number of calls for computing the integral and finding upper bound
+itmx2     1     ! number of iterations for computing the integral and finding upper bound
+foldcsi   1    ! number of folds on csi integration
+foldy     1    ! number of folds on  y  integration
+foldphi   1    ! number of folds on phi integration
+nubound 10000  ! number of bbarra calls to setup norm of upper bounding function
+icsimax  1     ! <= 100, number of csi subdivision when computing the upper bounds
+iymax    1     ! <= 100, number of y subdivision when computing the upper bounds
+xupbound 2d0   ! increase upper bound for radiation generation
+
+#runningscales 2	   ! default 0 (no running scales); 1,2: use running scales
+renscfact 1d0   ! (default 1d0) ren scale factor: muren  = muref * renscfact
+facscfact 1d0   ! (default 1d0) fac scale factor: mufact = muref * facscfact
+testplots  1       ! (default 0, do not) do NLO and PWHG distributions
+
+#bornonly   1      ! (default 0) if 1 do Born only
+#fakevirt   1      ! (default 0) if 1 use Born for virtuals
+
+iseed    3
+
+manyseeds  1       ! Used to perform multiple runs with different random
+                   ! seeds in the same directory.
+                   ! If set to 1, the program asks for an integer j;
+                   ! The file pwgseeds.dat at line j is read, and the
+                   ! integer at line j is used to initialize the random
+                   ! sequence for the generation of the event.
+                   ! The event file is called pwgevents-'j'.lhe
+
+#storeinfo_rwgt 1   ! store info for reweighting events
+#compute_rwgt 1   ! store info for reweighting events
+xgriditeration 1   ! identifier for grid generation
+parallelstage  4   ! identifier for parallel running stages
+
+
+toploop 1	! 1 include top loop effects; 0 disregard top loop effects
+msbar  1	! 1 MSbar renormalization; 0 On-Shell renormalization
+End of powheg.input content
+PDF package: lha
+ Random number generator initialized with:            3             0             0
+-->
+<init>
+     2212     2212  6.50000E+03  6.50000E+03     -1     -1     -1     -1     -4      1
+  4.71002E-07  5.99775E-07  1.00000E+00   9999
+</init>
+<event>
+      6   9999  1.03229E-06  2.16360E+01 -1.00000E+00  1.57647E-01
+      21    -1     0     0   501   511  0.000000000E+00  0.000000000E+00  1.623145772E+01  1.623145772E+01  0.000000000E+00  0.00000E+00  9.000E+00
+      21    -1     0     0   502   503  0.000000000E+00  0.000000000E+00 -9.295286849E+02  9.295286849E+02  0.000000000E+00  0.00000E+00  9.000E+00
+      25     1     1     2     0     0 -1.333629384E+01 -2.425621170E+01 -5.223165077E+02  5.377786810E+02  1.250006199E+02  0.00000E+00  9.000E+00
+       5     1     1     2   501     0  5.196398761E+00  2.288056838E+00  4.169006549E+00  8.495933132E+00  4.750000000E+00  0.00000E+00  9.000E+00
+      -5     1     1     2     0   503 -1.333601355E+01  1.934130486E+01 -3.293276907E+02  3.301987670E+02  4.750000000E+00  0.00000E+00  9.000E+00
+      21     1     1     2   502   511  2.147590863E+01  2.626850002E+00 -6.582203531E+01  6.928676154E+01  1.348699152E-06  0.00000E+00  9.000E+00
+#rwgt            1           9   2252078.4505690159                3   997377961           0
+</event>
+<event>
+      6   9999  1.03229E-06  1.46249E+01 -1.00000E+00  1.71330E-01
+      21    -1     0     0   501   502  0.000000000E+00  0.000000000E+00  1.007102807E+02  1.007102807E+02  0.000000000E+00  0.00000E+00  9.000E+00
+      21    -1     0     0   512   503  0.000000000E+00  0.000000000E+00 -1.771577421E+03  1.771577421E+03  0.000000000E+00  0.00000E+00  9.000E+00
+      25     1     1     2     0     0  2.676665125E+01 -1.060781528E+00 -1.292513190E+03  1.298819768E+03  1.249994670E+02  0.00000E+00  9.000E+00
+       5     1     1     2   501     0 -3.912874312E+00 -5.848548870E+00  9.600512114E+01  9.637977949E+01  4.750000000E+00  0.00000E+00  9.000E+00
+      -5     1     1     2     0   503 -3.098603531E+01 -5.246059302E+00 -4.026739363E+02  4.039263757E+02  4.750000000E+00  0.00000E+00  9.000E+00
+      21     1     1     2   512   502  8.132258376E+00  1.215538970E+01 -7.168513588E+01  7.316177848E+01  9.536743164E-07  0.00000E+00  9.000E+00
+#rwgt            1           9   17816.980138732986                3   111802473           1
+</event>

@@ -1,0 +1,123 @@
+(d~  d  ) ==>  H    b    b~   g       | mult=  1
+ d~  d    ==>  H    b    b~      | uborn, mult=  1
+   0  6
+(d~ )g    ==>  H    b    b~   d~      | mult=  1
+ g   g    ==>  H    b    b~      | uborn, mult=  1
+   1  6   2  6
+ d~ (g  ) ==>  H    b    b~   d~      | mult=  1
+ d~  d    ==>  H    b    b~      | uborn, mult=  1
+   1  6   2  6
+(d   d~ ) ==>  H    b    b~   g       | mult=  1
+ d   d~   ==>  H    b    b~      | uborn, mult=  1
+   0  6
+(d  )g    ==>  H    b    b~   d       | mult=  1
+ g   g    ==>  H    b    b~      | uborn, mult=  1
+   1  6   2  6
+ d  (g  ) ==>  H    b    b~   d       | mult=  1
+ d   d~   ==>  H    b    b~      | uborn, mult=  1
+   1  6   2  6
+(u~  u  ) ==>  H    b    b~   g       | mult=  1
+ u~  u    ==>  H    b    b~      | uborn, mult=  1
+   0  6
+(u~ )g    ==>  H    b    b~   u~      | mult=  1
+ g   g    ==>  H    b    b~      | uborn, mult=  1
+   1  6   2  6
+ u~ (g  ) ==>  H    b    b~   u~      | mult=  1
+ u~  u    ==>  H    b    b~      | uborn, mult=  1
+   1  6   2  6
+(u   u~ ) ==>  H    b    b~   g       | mult=  1
+ u   u~   ==>  H    b    b~      | uborn, mult=  1
+   0  6
+(u  )g    ==>  H    b    b~   u       | mult=  1
+ g   g    ==>  H    b    b~      | uborn, mult=  1
+   1  6   2  6
+ u  (g  ) ==>  H    b    b~   u       | mult=  1
+ u   u~   ==>  H    b    b~      | uborn, mult=  1
+   1  6   2  6
+(c~  c  ) ==>  H    b    b~   g       | mult=  1
+ c~  c    ==>  H    b    b~      | uborn, mult=  1
+   0  6
+(c~ )g    ==>  H    b    b~   c~      | mult=  1
+ g   g    ==>  H    b    b~      | uborn, mult=  1
+   1  6   2  6
+ c~ (g  ) ==>  H    b    b~   c~      | mult=  1
+ c~  c    ==>  H    b    b~      | uborn, mult=  1
+   1  6   2  6
+(c   c~ ) ==>  H    b    b~   g       | mult=  1
+ c   c~   ==>  H    b    b~      | uborn, mult=  1
+   0  6
+(c  )g    ==>  H    b    b~   c       | mult=  1
+ g   g    ==>  H    b    b~      | uborn, mult=  1
+   1  6   2  6
+ c  (g  ) ==>  H    b    b~   c       | mult=  1
+ c   c~   ==>  H    b    b~      | uborn, mult=  1
+   1  6   2  6
+(s~  s  ) ==>  H    b    b~   g       | mult=  1
+ s~  s    ==>  H    b    b~      | uborn, mult=  1
+   0  6
+(s~ )g    ==>  H    b    b~   s~      | mult=  1
+ g   g    ==>  H    b    b~      | uborn, mult=  1
+   1  6   2  6
+ s~ (g  ) ==>  H    b    b~   s~      | mult=  1
+ s~  s    ==>  H    b    b~      | uborn, mult=  1
+   1  6   2  6
+(s   s~ ) ==>  H    b    b~   g       | mult=  1
+ s   s~   ==>  H    b    b~      | uborn, mult=  1
+   0  6
+(s  )g    ==>  H    b    b~   s       | mult=  1
+ g   g    ==>  H    b    b~      | uborn, mult=  1
+   1  6   2  6
+ s  (g  ) ==>  H    b    b~   s       | mult=  1
+ s   s~   ==>  H    b    b~      | uborn, mult=  1
+   1  6   2  6
+(g  )d~   ==>  H    b    b~   d~      | mult=  1
+ d   d~   ==>  H    b    b~      | uborn, mult=  1
+   1  6   2  6
+ g  (d~ ) ==>  H    b    b~   d~      | mult=  1
+ g   g    ==>  H    b    b~      | uborn, mult=  1
+   1  6   2  6
+(g  )d    ==>  H    b    b~   d       | mult=  1
+ d~  d    ==>  H    b    b~      | uborn, mult=  1
+   1  6   2  6
+ g  (d  ) ==>  H    b    b~   d       | mult=  1
+ g   g    ==>  H    b    b~      | uborn, mult=  1
+   1  6   2  6
+(g  )u~   ==>  H    b    b~   u~      | mult=  1
+ u   u~   ==>  H    b    b~      | uborn, mult=  1
+   1  6   2  6
+ g  (u~ ) ==>  H    b    b~   u~      | mult=  1
+ g   g    ==>  H    b    b~      | uborn, mult=  1
+   1  6   2  6
+(g  )u    ==>  H    b    b~   u       | mult=  1
+ u~  u    ==>  H    b    b~      | uborn, mult=  1
+   1  6   2  6
+ g  (u  ) ==>  H    b    b~   u       | mult=  1
+ g   g    ==>  H    b    b~      | uborn, mult=  1
+   1  6   2  6
+(g  )c~   ==>  H    b    b~   c~      | mult=  1
+ c   c~   ==>  H    b    b~      | uborn, mult=  1
+   1  6   2  6
+ g  (c~ ) ==>  H    b    b~   c~      | mult=  1
+ g   g    ==>  H    b    b~      | uborn, mult=  1
+   1  6   2  6
+(g  )c    ==>  H    b    b~   c       | mult=  1
+ c~  c    ==>  H    b    b~      | uborn, mult=  1
+   1  6   2  6
+ g  (c  ) ==>  H    b    b~   c       | mult=  1
+ g   g    ==>  H    b    b~      | uborn, mult=  1
+   1  6   2  6
+(g  )s~   ==>  H    b    b~   s~      | mult=  1
+ s   s~   ==>  H    b    b~      | uborn, mult=  1
+   1  6   2  6
+ g  (s~ ) ==>  H    b    b~   s~      | mult=  1
+ g   g    ==>  H    b    b~      | uborn, mult=  1
+   1  6   2  6
+(g  )s    ==>  H    b    b~   s       | mult=  1
+ s~  s    ==>  H    b    b~      | uborn, mult=  1
+   1  6   2  6
+ g  (s  ) ==>  H    b    b~   s       | mult=  1
+ g   g    ==>  H    b    b~      | uborn, mult=  1
+   1  6   2  6
+(g   g  ) ==>  H    b    b~   g       | mult=  1
+ g   g    ==>  H    b    b~      | uborn, mult=  1
+   0  6

@@ -1,0 +1,166 @@
+\documentclass[a4paper,11pt]{article}
+\usepackage{amssymb,enumerate}
+\usepackage{amsmath}
+\usepackage{bbm}
+\usepackage{url}
+\usepackage{cite}
+\usepackage{graphics}
+\usepackage{xspace}
+\usepackage{epsfig}
+\usepackage{subfigure}
+
+\setlength\paperwidth  {210mm}%
+\setlength\paperheight {300mm}%	
+
+\textwidth 160mm%		% DEFAULT FOR LATEX209 IS a4
+\textheight 235mm%
+
+\voffset -1in
+\topmargin   .05\paperheight	% FROM TOP OF PAGE TO TOP OF HEADING (0=1inch)
+\headheight  .02\paperheight	% HEIGHT OF HEADING BOX.
+\headsep     .03\paperheight	% VERT. SPACE BETWEEN HEAD AND TEXT.
+\footskip    .07\paperheight	% FROM END OF TEX TO BASE OF FOOTER. (40pt)
+
+
+\hoffset -1in				% TO ADJUST WITH PAPER:
+	\oddsidemargin .13\paperwidth	% LEFT MARGIN FOR ODD PAGES (10)
+	\evensidemargin .15\paperwidth	% LEFT MARGIN FOR EVEN PAGES (30)
+	\marginparwidth .10\paperwidth	% TEXTWIDTH OF MARGINALNOTES
+	\reversemarginpar		% BECAUSE OF TITLEPAGE.
+
+%%%%%%%%%% Start TeXmacs macros
+\newcommand{\tmtextit}[1]{{\itshape{#1}}}
+\newcommand{\tmtexttt}[1]{{\ttfamily{#1}}}
+\newenvironment{enumeratenumeric}{\begin{enumerate}[ 1.] }{\end{enumerate}}
+\newcommand\sss{\mathchoice%
+{\displaystyle}%
+{\scriptstyle}%
+{\scriptscriptstyle}%
+{\scriptscriptstyle}%
+}
+\newcommand\PSn{\Phi_{n}}
+\newcommand{\tmop}[1]{\ensuremath{\operatorname{#1}}}
+
+
+
+\newcommand\Lum{{\cal L}}
+\newcommand\matR{{\cal R}}
+\newcommand\Kinnpo{{\bf \Phi}_{n+1}}
+\newcommand\Kinn{{\bf \Phi}_n}
+\newcommand\PSnpo{\Phi_{n+1}}
+\newcommand\as{\alpha_{\sss\rm S}}
+\newcommand\asotpi{\frac{\as}{2\pi}}
+
+\newcommand\POWHEG{{\tt POWHEG}}
+\newcommand\POWHEGBOX{{\tt POWHEG BOX}}
+\newcommand\POWHEGBOXV{{\tt POWHEG-BOX-V2}}
+\newcommand\PYTHIA{{\tt PYTHIA}}
+\newcommand\POWHEGpPYTHIA{{\tt POWHEG+PYTHIA}}
+\newcommand\HERWIG{{\tt HERWIG}}
+
+\def\lq{\left[} 
+\def\rq{\right]} 
+\def\rg{\right\}} 
+\def\lg{\left\{} 
+\def\({\left(} 
+\def\){\right)} 
+
+\def\beq{\begin{equation}}
+\def\beqn{\begin{eqnarray}}
+\def\eeq{\end{equation}}
+\def\eeqn{\end{eqnarray}}
+
+\def\mr{\mathrm}\def\pbox{{\tt POWHEG BOX}}
+\def\pwg{{\tt POWHEG}}
+\def\mc{\mathcal}
+
+%%%%%%%%%% End TeXmacs macros
+
+\title{Manual for  Higgs boson production in association with bottom quarks in the \POWHEGBOXV{}}
+\date{}
+
+\begin{document}
+\maketitle
+%
+\noindent
+The {\tt bbH} program in the \POWHEGBOXV{} is an implementation of Higgs boson production in association with bottom quarks. Details of the calculation are described in Ref.~\cite{JRW}. 
+%
+The code is applicable for values of the mass and width of the Higgs boson where its decays can be treated using a narrow-width approximation, and off-shell effects are small.
+%
+If you use this program, please quote Refs.~\cite{JRW,Dawson:2003kb,Dawson:2005vi,Alioli:2010xd}.
+%\\[2ex]
+%
+\section*{Running the program}
+%
+Download the \POWHEGBOXV{}, following the instructions at the web site 
+\\[2ex]
+{\tt http://powhegbox.mib.infn.it/}
+\\[2ex] 
+and go to the process directory by typing 
+\\[2ex]
+{\tt \$ cd \POWHEGBOXV/bbH}  
+\\[2ex]
+Running is most conveniently done in a separate directory. Together with the code, we provide the directory {\tt testrun} that contains sample input and seed files. 
+\\[2ex]
+For your runs, generate your own directory, for instance by doing 
+\\[2ex]
+{\tt \$ mkdir myruns}
+\\[2ex]
+The directory must contain the {\tt powheg.input} file, where parameters for the Higgs boson and the top quark decays as well as technical  parameters are specified, and, for
+parallel running, a {\tt pwgseeds.dat} file (see {\tt manual-BOX.pdf}
+and {\tt Manyseeds.pdf} in the  {\tt POWHEG-BOX-V2/Docs} directory).
+\\[2ex]
+Before compiling make sure that:
+\begin{itemize}
+\item 
+{\tt lhapdf} is installed and {\tt lhapdf-config} is in the path,
+\item
+{\tt gfortran}, {\tt ifort} or {\tt g77} is in the path, and the
+appropriate libraries are in the environment variable {\tt
+  LD\_LIBRARY\_PATH}. 
+\end{itemize}
+%\\[2ex]
+After compiling the executable {\tt pwhg\_main} in the {\tt bbH} directory, enter the {\tt myruns} directory and perform all your runs there. 
+\\[2ex]
+The program can be run in a parallel mode in several consecutive steps by setting 
+\\[2ex]
+{\tt manyseeds   1}
+\\[2ex]
+in the file  {\tt powheg.input}.  With this option, the four steps of grid generation, NLO calculation, upper bound generation, and event generation can then be performed in parallel, consecutively, as described, for instance, in the manual of the {\tt VBF\_Z\_Z} directory in the \POWHEGBOXV{}. Alternatively, all results can be obtained in the serial mode of the program by de-activating the  {\tt manyseeds} option. 
+
+If the default analysis is activated by setting the flag 
+{\tt ANALYSIS=default} in the Makefile before compiling the code, after the completion of the NLO calculation for each parallel run a file {\tt  pwg-*-NLO.top} is generated (where the * denotes the integer
+identifier of the run). These files contain histogram information at fixed-order accuracy for an inclusive setup in gnuplot-friendly format. The default analysis routine can easily be replaced with a personalized one by the user.  
+
+The events that are ultimately generated in Les Houches format can be processed by a generic Monte-Carlo program. We are providing an interface to \PYTHIA~{\tt 6.4.25}. After generating the exectuable {\tt main-PYTHIA-lhef} and running it in the directory where the event files are stored, the program produces an output file {\tt pwgPOWHEG+PYTHIA-output.top} that contains histograms at NLO+PS accuracy. The Monte-Carlo parameters can be modified by the user in the file {\tt setup-PYTHIA-lhef.f}. 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+\begin{thebibliography}{99}
+
+\bibitem{JRW} B.~J\"ager, L.~Reina, D.~Wackeroth, {\em Higgs boson production in association with $b$-jets in the  \POWHEGBOX{}}, arXiv:1509.05843 [hep-ph]. 
+
+\bibitem{Dawson:2003kb}
+  S.~Dawson, C.~B.~Jackson, L.~Reina and D.~Wackeroth,
+  {\em Exclusive Higgs boson production with bottom quarks at hadron colliders},
+  Phys.\ Rev.\ D {\bf 69} (2004) 074027
+  [hep-ph/0311067].
+  %%CITATION = HEP-PH/0311067;%%
+  %160 citations counted in INSPIRE as of 10 sept. 2015
+
+\bibitem{Dawson:2005vi}
+  S.~Dawson, C.~B.~Jackson, L.~Reina and D.~Wackeroth,
+  {\em Higgs production in association with bottom quarks at hadron colliders} ,
+  Mod.\ Phys.\ Lett.\ A {\bf 21} (2006) 89
+  [hep-ph/0508293].
+  %%CITATION = HEP-PH/0508293;%%
+  %75 citations counted in INSPIRE as of 10 sept. 2015
+
+\bibitem{Alioli:2010xd} S.~Alioli, P.~Nason, C.~Oleari and E. Re, {\em
+    A general framework for implementing NLO calculations in shower
+    Monte Carlo programs: the POWHEG BOX}, JHEP {\bf 1006} (2010)
+  043  [arXiv:1002.2581 [hep-ph]].
+
+\end{thebibliography}
+%%%%%%%%%%%%%%%%%%
+\end{document}
