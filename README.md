@@ -16,13 +16,13 @@ cd -
 
 make pwhg_main
 
-# cd testrun
+##cd testrun
 
-# ../pwhg_main
+##../pwhg_main
 
-# OR
+##OR
 
-# cd testrun/parallel
+##cd testrun/parallel
 
-# ./script.sh
+##./script.sh
 
